@@ -1,0 +1,27 @@
+<head>
+    <meta charset="utf-8">
+    <title>Leaderboard-Meteor.js</title>
+</head>
+
+<body>
+    <h1>Leaderboard</h1> {{> leaderboard}}
+</body>
+<template name="leaderboard">
+    <!--    only show if a player is selected-->
+    {{#if showSelectedPlayer}}
+        <!--    selected player is displayed here-->
+        <li>Selected Player: {{showSelectedPlayer.name}}</li>
+    {{/if}}
+
+    <!--    button for adding points to player-->
+    <input type="button" class="increment" value="Give 5 points">
+    <!--    button for decrementing points from player-->
+    <input type="button" class="decrement" value="Take 5 points">
+
+    <!--    list of players   -->
+    <ul>{{#each player}}
+        <li class="player {{selectedClass}}">
+            {{name}}: {{score}}</li>
+        {{/each}}
+    </ul>
+</template>
