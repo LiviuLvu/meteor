@@ -1,0 +1,15 @@
+{
+	"folders":
+	[
+		{
+			"path": "leaderboard"
+		}
+	],
+	    "ternjs": {
+        "libs": ["browser", "underscore", "jquery"],
+        "exclude": [".meteor/**", "node_modules/**"],
+        "plugins": {
+            "meteor": {}
+        }
+    }
+}

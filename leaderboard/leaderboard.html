@@ -4,7 +4,11 @@
 </head>
 
 <body>
-    <h1>Leaderboard</h1> {{> leaderboard}}
+    <h1>Leaderboard</h1>
+    <p>Create a list of players and give them points. Log in to acces to the app controls and create your list.</p>
+    {{> leaderboard}}
+    <div>{{> loginButtons}}</div>
+
 </body>
 <template name="leaderboard">
     <!--    only show if a player is selected-->
@@ -13,15 +17,26 @@
         <li>Selected Player: {{showSelectedPlayer.name}}</li>
     {{/if}}
 
-    <!--    button for adding points to player-->
-    <input type="button" class="increment" value="Give 5 points">
-    <!--    button for decrementing points from player-->
-    <input type="button" class="decrement" value="Take 5 points">
-
     <!--    list of players   -->
     <ul>{{#each player}}
         <li class="player {{selectedClass}}">
             {{name}}: {{score}}</li>
         {{/each}}
     </ul>
+    {{> addPlayerForm}}
+</template>
+
+<template name="addPlayerForm">
+    {{#if currentUser}}
+        <!--    button for adding points to player-->
+        <input type="button" class="increment" value="Give 5 points">
+        <!--    button for decrementing points from player-->
+        <input type="button" class="decrement" value="Take 5 points">
+        <!-- form for adding a new player -->
+        <form>
+            <input type="text" name="playerName">
+            <input type="submit" name="addPlayer">
+        </form>
+        <input type="button" class="remove" value="Remove Player">
+    {{/if}}
 </template>
