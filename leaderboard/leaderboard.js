@@ -12,11 +12,8 @@ if (Meteor.isClient) {
         'player': function () {
             var currentUserId = Meteor.userId();
             //get list of players from database
-            return PlayersList.find({createdBy: currentUserId}, {
-                sort: {
-                    score: -1,
-                    name: 1
-                }
+            return PlayersList.find({}, {
+                sort: {score: -1, name: 1}
             });
         },
         'selectedClass': function () {
@@ -74,8 +71,13 @@ if (Meteor.isClient) {
             });
         }
     });
+    Meteor.subscribe('thePlayers');
 
 }
 if (Meteor.isServer) {
-
+    //make data accesible to the client
+    Meteor.publish('thePlayers', function () {
+        var currentUserId = this.userId;
+        return PlayersList.find( {createdBy: currentUserId} );
+    });
 }
