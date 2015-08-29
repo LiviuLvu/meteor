@@ -1,3 +1,50 @@
-.selected {
-    background-color: #79d5d9;
+body {
+  font-family: sans-serif;
+  padding: 0 5em;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  color: #999;
+  font-size: .875em;
+}
+
+.player {
+  border-bottom: 1px solid #f1f1f1;
+  cursor: pointer;
+  padding: .2em 0;
+  overflow: hidden;
+}
+.selectedNameText {
+  color: #7AC6DF
+}
+
+.player .selected {
+  background-color: #D0E9FF;
+  border-left: #7AC6DF 2px solid;
+}
+
+.row:hover {
+  background-color: #D0E9FF;
+}
+
+.name {
+  display: block;
+  float: left;
+  text-align: left;
+  font-weight: 300;
+  padding-left: 1.5rem;
+}
+
+.score {
+  display: inline-block;
+  float: right;
+  font-weight: 600;
+  padding-right: 1.5em;
 }

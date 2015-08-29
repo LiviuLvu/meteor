@@ -4,42 +4,50 @@
 </head>
 
 <body>
-    <h1>Leaderboard</h1>
-    <p>Create a list of players and give them points. Log in to acces to the app controls and create your list.</p>
-    {{> leaderboard}}
+    <h1 class="title">Leaderboard</h1>
+    <div class="subtitle">
+        <p>Create a list of players and give them points.</p>
+        <p>Log in to acces to the app controls and create your private list.</p>
+    </div>
+    <div class="player">{{> leaderboard}}</div>
     <br>
 
     <div>{{> loginButtons}}</div>
 
 </body>
 <template name="leaderboard">
-    <!--    only show if a player is selected-->
+    <!--    list of players   -->
+    <ul>
+        {{#each player}}
+        <li class="player {{selectedClass}} row">
+            <span class="name">{{name}}:</span>
+            <span class="score">{{score}}</span>
+        </li>
+        {{/each}}
+         <!--    only show if a player is selected-->
+    </ul>
+
     {{#if showSelectedPlayer}}
-        <!--    selected player is displayed here-->
-        <li>Selected Player: {{showSelectedPlayer.name}}</li>
-        <div><!--    button for adding points to player-->
+        <span>
+            <!--    selected player is displayed here-->
+            <p class="selectedNameText">
+                Selected Player: {{showSelectedPlayer.name}}
+            </p>
+            <!--    button for adding points to player-->
             <input type="button" class="increment" value="Give 5 points">
             <!--    button for decrementing points from player-->
             <input type="button" class="decrement" value="Take 5 points">
             <!-- remove player -->
             <input type="button" class="remove" value="Remove Player">
-        </div>
+        </span>
     {{/if}}
-
-    <!--    list of players   -->
-    <ul>
-        {{#each player}}
-        <li class="player {{selectedClass}}">
-            {{name}}: {{score}}</li>
-        {{/each}}
-    </ul>
-    {{> addPlayerForm}}
+    <p>{{> addPlayerForm}}</p>
 </template>
 
 <template name="addPlayerForm">
     {{#if currentUser}}
         <!-- form for adding a new player -->
-        <form>
+        <form >
             <input type="text" name="playerName" placeholder="Add new player">
             <input type="submit" name="addPlayer">
         </form>
