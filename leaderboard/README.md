@@ -16,4 +16,4 @@ A user does not see lists created by others.
 You can see this app on the METEORpad:
 http://meteorpad.com/pad/dHYdzNwwt2J5xDjYD/leaderboard-liviu
 
-![alt tag](http://url/to/img.png)
+![image](https://raw.githubusercontent.com/LiviuLvu/meteor/master/leaderboard/leaderboard-preview.jpg)
