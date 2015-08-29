@@ -27,7 +27,8 @@
     {{/if}}
 
     <!--    list of players   -->
-    <ul>{{#each player}}
+    <ul>
+        {{#each player}}
         <li class="player {{selectedClass}}">
             {{name}}: {{score}}</li>
         {{/each}}
@@ -42,6 +43,5 @@
             <input type="text" name="playerName" placeholder="Add new player">
             <input type="submit" name="addPlayer">
         </form>
-
     {{/if}}
 </template>
