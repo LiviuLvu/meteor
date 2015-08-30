@@ -4,5 +4,3 @@ learning to use meteor
 
 This is a collection of app tutorials written with Meteor.js.
 
-You can see selected apps written with meteor and other frameworks here: http://liviulvu.github.io/
-
