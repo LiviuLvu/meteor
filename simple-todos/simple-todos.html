@@ -3,13 +3,21 @@
 </head>
 
 <body>
-	<div class="containter">
+	<div class="container">
 		<header>
-			<h1>Todo List</h1>
-
-			<form class="new-task">
-				<input type="text" name="text" placeholder="Add new task">
-			</form>
+			<h1>Todo List {{incompeleteCount}}</h1>
+			<!-- hide completed tasks when box checked -->
+			<label class="hide-completed">
+				<input type="checkbox" checked="{{hideCompleted}}">
+				Hide Completed Tasks
+			</label>
+			<!-- login form -->
+			{{> loginButtons}}
+			{{#if currentUser}}
+				<form class="new-task">
+					<input type="text" name="text" placeholder="Add new task">
+				</form>
+			{{/if}}
 		</header>
 		<ul>
 			{{#each tasks}}
@@ -21,10 +29,21 @@
 
 <template name="task">
 	<!-- if toggle checked is true, apply class -->
-	<li class="{{#if checked}} checked {{/if}}">
+	<li class="{{#if checked}} checked {{/if}} {{#if private}}private{{/if}}">
 		<button class="delete">&times;</button>
 
 		<input type="checkbox" checked="{{checked}}" class="toggle-checked">
-		<span class="text">{{text}}</span>
+		<!-- add private option button for tasks -->
+		{{#if isOwner}}
+			<button class="toggle-private">
+				{{#if private}}
+					Private
+				{{else}}
+					Public
+				{{/if}}
+			</button>
+		{{/if}}
+
+		<span class="text"><strong>{{username}}</strong> - {{text}}</span>
 	</li>
 </template>
