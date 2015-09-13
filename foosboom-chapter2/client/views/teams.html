@@ -1,0 +1,28 @@
+<template name="teams">
+	<h3>Teams List</h3>
+	<!-- using spacebars to render data {{helper name}}-->
+	<div>
+	<!-- ‘Create team’ button morphs into a text field when you click on it. -->
+	{{#if isCreatingTeam}}
+				<form class="create-team form-inline">
+					<div class="form-group">
+						<input name="name" type="text" class="form-control" placeholder="Team Name">
+					</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+						<a class="cancel" href="#">Cancel</a>
+				</form>
+	{{else}}
+		<a class="create btn btn-default" href="#">Create</a>
+	{{/if}}
+	</div>
+	<br>
+	<ul class="list-group list-unstyled">
+		<!-- loop over arrays with Spacebars {{#each... -->
+		<!-- loop through each item in the teams array -->
+		{{#each teams}}
+			<li class="divider list-group-item">
+				{{> team}}
+			</li>
+		{{/each}}
+	</ul>
+</template>
