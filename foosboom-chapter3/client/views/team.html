@@ -1,0 +1,20 @@
+<!-- edit the team name -->
+<template name="team">
+	<li class="divider list-group-item">
+		{{#if isEditingTeam}}
+			<form class="create-team form-inline">
+				<div class="form-group">
+					<input name="name" type="text" class="form-control" value="{{name}}">
+				</div>
+					<a class="submit btn btn-default" href="#">Submit</a>
+					<a class="cancel" href="#">Cancel</a>
+			</form>
+		{{else}}
+			<label>{{name}}</label>
+			<span class="pull-right">
+				<a class="edit glyphicon glyphicon-pencil" href="#"></a>
+				<a class="remove glyphicon glyphicon-remove-circle"></a>
+			</span>
+		{{/if}}
+	</li>
+</template>

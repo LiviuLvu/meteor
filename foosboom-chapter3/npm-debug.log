@@ -1,0 +1,218 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'mongo-hacker' ]
+2 info using npm@2.9.1
+3 info using node@v0.12.3
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose install initial load of C:\Users\Lvu\AppData\Roaming\npm\package.json
+6 verbose readDependencies loading dependencies from C:\Users\Lvu\AppData\Roaming\npm\package.json
+7 silly cache add args [ 'mongo-hacker', null ]
+8 verbose cache add spec mongo-hacker
+9 silly cache add parsed spec { raw: 'mongo-hacker',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'mongo-hacker',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: '*',
+9 silly cache add   type: 'range' }
+10 silly addNamed mongo-hacker@*
+11 verbose addNamed "*" is a valid semver range for mongo-hacker
+12 silly addNameRange { name: 'mongo-hacker', range: '*', hasData: false }
+13 silly mapToRegistry name mongo-hacker
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry uri https://registry.npmjs.org/mongo-hacker
+17 verbose addNameRange registry:https://registry.npmjs.org/mongo-hacker not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/mongo-hacker
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 11:38:25 PM
+21 verbose request id 88326d31697c12d9
+22 http request GET https://registry.npmjs.org/mongo-hacker
+23 http 200 https://registry.npmjs.org/mongo-hacker
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"D28D2XTUJ3WNV2O0H61S3NB2J"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     'content-length': '11569',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Mon, 21 Sep 2015 20:38:26 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-fra1221-FRA',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '1',
+24 silly get     'x-timer': 'S1442867906.257937,VS0,VE402',
+24 silly get     vary: 'Accept' } ]
+25 verbose get saving mongo-hacker to C:\Users\Lvu\AppData\Roaming\npm-cache\registry.npmjs.org\mongo-hacker\.cache.json
+26 silly addNameRange number 2 { name: 'mongo-hacker', range: '*', hasData: true }
+27 silly addNameRange versions [ 'mongo-hacker', [ '0.0.3', '0.0.4', '0.0.5', '0.0.8' ] ]
+28 silly addNamed mongo-hacker@0.0.8
+29 verbose addNamed "0.0.8" is a plain semver version for mongo-hacker
+30 silly mapToRegistry name mongo-hacker
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/mongo-hacker
+34 verbose addRemoteTarball https://registry.npmjs.org/mongo-hacker/-/mongo-hacker-0.0.8.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/mongo-hacker/-/mongo-hacker-0.0.8.tgz',
+35 verbose addRemoteTarball   'affb7e7577b9e9b234432a868ba6d93e6d3411e5' ]
+36 info retry fetch attempt 1 at 11:38:25 PM
+37 info attempt registry request try #1 at 11:38:25 PM
+38 http fetch GET https://registry.npmjs.org/mongo-hacker/-/mongo-hacker-0.0.8.tgz
+39 http fetch 200 https://registry.npmjs.org/mongo-hacker/-/mongo-hacker-0.0.8.tgz
+40 silly fetchAndShaCheck shasum affb7e7577b9e9b234432a868ba6d93e6d3411e5
+41 verbose addTmpTarball C:\Users\Lvu\AppData\Local\Temp\npm-8884-5486c740\registry.npmjs.org\mongo-hacker\-\mongo-hacker-0.0.8.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for mongo-hacker@0.0.8
+43 silly cache afterAdd mongo-hacker@0.0.8
+44 verbose afterAdd C:\Users\Lvu\AppData\Roaming\npm-cache\mongo-hacker\0.0.8\package\package.json not in flight; writing
+45 verbose afterAdd C:\Users\Lvu\AppData\Roaming\npm-cache\mongo-hacker\0.0.8\package\package.json written
+46 silly install resolved [ { name: 'mongo-hacker',
+46 silly install resolved     version: '0.0.8',
+46 silly install resolved     description: 'MongoDB Shell Enhancements for Hackers',
+46 silly install resolved     scripts:
+46 silly install resolved      { test: 'echo "Error: no test specified" && exit 1',
+46 silly install resolved        install: 'make install',
+46 silly install resolved        update: 'make install',
+46 silly install resolved        postuninstall: 'make uninstall' },
+46 silly install resolved     preferGlobal: true,
+46 silly install resolved     repository:
+46 silly install resolved      { type: 'git',
+46 silly install resolved        url: 'git@github.com:TylerBrock/mongo-hacker.git' },
+46 silly install resolved     keywords: [ 'mongodb', 'shell', 'hacks', 'tweaks' ],
+46 silly install resolved     author: { name: 'Tyler Brock', email: 'tyler.brock@gmail.com' },
+46 silly install resolved     homepage: 'http://tylerbrock.github.io/mongo-hacker/',
+46 silly install resolved     license: 'MIT',
+46 silly install resolved     bugs: { url: 'https://github.com/TylerBrock/mongo-hacker/issues' },
+46 silly install resolved     gitHead: '78f9412df818daff3f82ed6c5f25ac60f35e4ba8',
+46 silly install resolved     _id: 'mongo-hacker@0.0.8',
+46 silly install resolved     _shasum: 'affb7e7577b9e9b234432a868ba6d93e6d3411e5',
+46 silly install resolved     _from: 'mongo-hacker@*',
+46 silly install resolved     _npmVersion: '2.7.5',
+46 silly install resolved     _nodeVersion: '0.12.2',
+46 silly install resolved     _npmUser: { name: 'tylerbrock', email: 'tyler.brock@gmail.com' },
+46 silly install resolved     maintainers: [ [Object] ],
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: 'affb7e7577b9e9b234432a868ba6d93e6d3411e5',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/mongo-hacker/-/mongo-hacker-0.0.8.tgz' },
+46 silly install resolved     directories: {},
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/mongo-hacker/-/mongo-hacker-0.0.8.tgz' } ]
+47 info install mongo-hacker@0.0.8 into C:\Users\Lvu\AppData\Roaming\npm
+48 info installOne mongo-hacker@0.0.8
+49 verbose installOne of mongo-hacker to C:\Users\Lvu\AppData\Roaming\npm not in flight; installing
+50 verbose lock using C:\Users\Lvu\AppData\Roaming\npm-cache\_locks\mongo-hacker-69ce9936cca1feae.lock for C:\Users\Lvu\AppData\Roaming\npm\node_modules\mongo-hacker
+51 silly install write writing mongo-hacker 0.0.8 to C:\Users\Lvu\AppData\Roaming\npm\node_modules\mongo-hacker
+52 verbose unbuild node_modules\mongo-hacker
+53 silly gentlyRm C:\Users\Lvu\AppData\Roaming\npm\node_modules\mongo-hacker is being purged from base C:\Users\Lvu\AppData\Roaming\npm
+54 verbose gentlyRm don't care about contents; nuking C:\Users\Lvu\AppData\Roaming\npm\node_modules\mongo-hacker
+55 verbose tar unpack C:\Users\Lvu\AppData\Roaming\npm-cache\mongo-hacker\0.0.8\package.tgz
+56 verbose tar unpacking to C:\Users\Lvu\AppData\Roaming\npm\node_modules\mongo-hacker
+57 silly gentlyRm C:\Users\Lvu\AppData\Roaming\npm\node_modules\mongo-hacker is being purged
+58 verbose gentlyRm don't care about contents; nuking C:\Users\Lvu\AppData\Roaming\npm\node_modules\mongo-hacker
+59 silly gunzTarPerm modes [ '777', '666' ]
+60 silly gunzTarPerm extractEntry package.json
+61 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+62 silly gunzTarPerm extractEntry .npmignore
+63 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+64 silly gunzTarPerm extractEntry README.md
+65 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+66 silly gunzTarPerm extractEntry LICENSE
+67 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+68 silly gunzTarPerm extractEntry base.js
+69 silly gunzTarPerm modified mode [ 'base.js', 420, 438 ]
+70 silly gunzTarPerm extractEntry config.js
+71 silly gunzTarPerm modified mode [ 'config.js', 420, 438 ]
+72 silly gunzTarPerm extractEntry Makefile
+73 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+74 silly gunzTarPerm extractEntry hacks/aggregation.js
+75 silly gunzTarPerm modified mode [ 'hacks/aggregation.js', 420, 438 ]
+76 silly gunzTarPerm extractEntry hacks/color.js
+77 silly gunzTarPerm modified mode [ 'hacks/color.js', 420, 438 ]
+78 silly gunzTarPerm extractEntry hacks/common.js
+79 silly gunzTarPerm modified mode [ 'hacks/common.js', 420, 438 ]
+80 silly gunzTarPerm extractEntry hacks/count.js
+81 silly gunzTarPerm modified mode [ 'hacks/count.js', 420, 438 ]
+82 silly gunzTarPerm extractEntry hacks/find_and_modify.js
+83 silly gunzTarPerm modified mode [ 'hacks/find_and_modify.js', 420, 438 ]
+84 silly gunzTarPerm extractEntry hacks/cmd_search.js
+85 silly gunzTarPerm modified mode [ 'hacks/cmd_search.js', 420, 438 ]
+86 silly gunzTarPerm extractEntry hacks/index_paranoia.js
+87 silly gunzTarPerm modified mode [ 'hacks/index_paranoia.js', 420, 438 ]
+88 silly gunzTarPerm extractEntry hacks/old_aggregation.js
+89 silly gunzTarPerm modified mode [ 'hacks/old_aggregation.js', 420, 438 ]
+90 silly gunzTarPerm extractEntry hacks/prompt.js
+91 silly gunzTarPerm modified mode [ 'hacks/prompt.js', 420, 438 ]
+92 silly gunzTarPerm extractEntry hacks/sh_status.js
+93 silly gunzTarPerm modified mode [ 'hacks/sh_status.js', 420, 438 ]
+94 silly gunzTarPerm extractEntry hacks/show.js
+95 silly gunzTarPerm modified mode [ 'hacks/show.js', 420, 438 ]
+96 silly gunzTarPerm extractEntry hacks/auto_complete.js
+97 silly gunzTarPerm modified mode [ 'hacks/auto_complete.js', 420, 438 ]
+98 silly gunzTarPerm extractEntry hacks/uuid.js
+99 silly gunzTarPerm modified mode [ 'hacks/uuid.js', 420, 438 ]
+100 silly gunzTarPerm extractEntry hacks/api.js
+101 silly gunzTarPerm modified mode [ 'hacks/api.js', 420, 438 ]
+102 silly gunzTarPerm extractEntry hacks/verbose.js
+103 silly gunzTarPerm modified mode [ 'hacks/verbose.js', 420, 438 ]
+104 silly gunzTarPerm extractEntry hacks/helpers.js
+105 silly gunzTarPerm modified mode [ 'hacks/helpers.js', 420, 438 ]
+106 verbose write writing to C:\Users\Lvu\AppData\Roaming\npm\node_modules\mongo-hacker\package.json
+107 info preinstall mongo-hacker@0.0.8
+108 verbose readDependencies loading dependencies from C:\Users\Lvu\AppData\Roaming\npm\node_modules\mongo-hacker\package.json
+109 verbose readDependencies loading dependencies from C:\Users\Lvu\AppData\Roaming\npm\node_modules\mongo-hacker\package.json
+110 silly install resolved []
+111 verbose about to build C:\Users\Lvu\AppData\Roaming\npm\node_modules\mongo-hacker
+112 info build C:\Users\Lvu\AppData\Roaming\npm\node_modules\mongo-hacker
+113 info linkStuff mongo-hacker@0.0.8
+114 silly linkStuff mongo-hacker@0.0.8 has C:\Users\Lvu\AppData\Roaming\npm\node_modules as its parent node_modules
+115 silly linkStuff mongo-hacker@0.0.8 is part of a global install
+116 silly linkStuff mongo-hacker@0.0.8 is installed into a global node_modules
+117 silly linkStuff mongo-hacker@0.0.8 is installed into the top-level global node_modules
+118 verbose linkBins mongo-hacker@0.0.8
+119 verbose linkMans mongo-hacker@0.0.8
+120 verbose rebuildBundles mongo-hacker@0.0.8
+121 info install mongo-hacker@0.0.8
+122 verbose unsafe-perm in lifecycle true
+123 info mongo-hacker@0.0.8 Failed to exec install script
+124 verbose unlock done using C:\Users\Lvu\AppData\Roaming\npm-cache\_locks\mongo-hacker-69ce9936cca1feae.lock for C:\Users\Lvu\AppData\Roaming\npm\node_modules\mongo-hacker
+125 verbose stack Error: mongo-hacker@0.0.8 install: `make install`
+125 verbose stack Exit status 1
+125 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:213:16)
+125 verbose stack     at EventEmitter.emit (events.js:110:17)
+125 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+125 verbose stack     at ChildProcess.emit (events.js:110:17)
+125 verbose stack     at maybeClose (child_process.js:1015:16)
+125 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+126 verbose pkgid mongo-hacker@0.0.8
+127 verbose cwd D:\node\http-server\public\GitHub\meteor\foosboom-chapter3
+128 error Windows_NT 6.1.7601
+129 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "mongo-hacker"
+130 error node v0.12.3
+131 error npm  v2.9.1
+132 error code ELIFECYCLE
+133 error mongo-hacker@0.0.8 install: `make install`
+133 error Exit status 1
+134 error Failed at the mongo-hacker@0.0.8 install script 'make install'.
+134 error This is most likely a problem with the mongo-hacker package,
+134 error not with npm itself.
+134 error Tell the author that this fails on your system:
+134 error     make install
+134 error You can get their info via:
+134 error     npm owner ls mongo-hacker
+134 error There is likely additional logging output above.
+135 verbose exit [ 1, true ]
+136 verbose unbuild node_modules\mongo-hacker
+137 info preuninstall mongo-hacker@0.0.8
+138 info uninstall mongo-hacker@0.0.8
+139 verbose unbuild rmStuff mongo-hacker@0.0.8 from C:\Users\Lvu\AppData\Roaming\npm\node_modules
+140 info postuninstall mongo-hacker@0.0.8
+141 verbose unsafe-perm in lifecycle true
+142 info mongo-hacker@0.0.8 Failed to exec postuninstall script
+143 warn continuing anyway mongo-hacker@0.0.8 postuninstall: `make uninstall`
+143 warn continuing anyway Exit status 1
+144 silly gentlyRm C:\Users\Lvu\AppData\Roaming\npm\node_modules\mongo-hacker is being purged from base C:\Users\Lvu\AppData\Roaming\npm
+145 verbose gentlyRm don't care about contents; nuking C:\Users\Lvu\AppData\Roaming\npm\node_modules\mongo-hacker
+146 silly vacuum-fs purging C:\Users\Lvu\AppData\Roaming\npm\node_modules\mongo-hacker
+147 silly vacuum-fs quitting because other entries in C:\Users\Lvu\AppData\Roaming\npm\node_modules
