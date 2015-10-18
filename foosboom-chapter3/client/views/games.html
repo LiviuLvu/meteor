@@ -1,5 +1,32 @@
 <template name="games">
 	<h3>Games</h3>
+
+	{{#if isCreatingGame}}
+		<form class="form-create">
+			<select name="teamOne">
+				{{#each teams}}
+					<option value="{{_id}}">
+						{{name}}
+					</option>
+				{{/each}}
+			</select>
+			vs
+			<select name="teamTwo">
+				{{#each teams}}
+					<option value="{{_id}}">
+						{{name}}
+					</option>
+				{{/each}}
+			</select>
+
+			<button type="submit">Submit</button>
+			<a href="#" class="cancel">Cancel</a>
+		</form>
+	{{else}}
+		<a href="#" class="create btn btn-default">Create</a>
+      <br>
+	{{/if}}
+
 	<ul class="list-group list-unstyled">
 		{{#each games}}
 			{{>game}}

@@ -1,18 +1,30 @@
 //default fill after meteor reset
 //we can add some seed data so our app is not empty when we reset it
 Meteor.startup(function() {
-    if (Teams.find().count() === 0) {
+var dummyUserEmail = 'test@test.com';
+
+  if (Meteor.users.find({"emails.address": dummyUserEmail}).count() === 0){
+
+    // Create a test user. `createUser` returns the id of the created user
+    var ownerId = Accounts.createUser({
+      email: dummyUserEmail,
+      password: 'matthew'
+    });
+
         //create some teams
         [{
             name: "Barcelona",
             //store array of game id on each team
-            gameIds: []
+            gameIds: [],
+            ownerId: ownerId
         }, {
             name: "Real Madrid",
-            gameIds: []
+            gameIds: [],
+            ownerId: ownerId
         }, {
             name: "Matt's team",
-            gameIds: []
+            gameIds: [],
+            ownerId: ownerId
         }].forEach(function(team) {
             Teams.insert(team);
         });
@@ -23,6 +35,7 @@ Meteor.startup(function() {
         var game = {
             completed: false,
             createdAt: new Date(),
+            ownerId: ownerId,
             teams: [{
                 name: team1.name,
                 _id: team1._id,
