@@ -5,7 +5,7 @@ Made by following official meteor tutorial
 Users must login to add items.
 Allows private list items.
 
-~~Test it here: http://liviu-simple-todos.meteor.com/~~ the app does not work after deployment. No reason found yet.
+Test it here: http://liviu-simple-todos.meteor.com/
 
 Test the app on meteor pad:
 Full screen:
