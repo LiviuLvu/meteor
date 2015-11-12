@@ -1,0 +1,13 @@
+/*.categoryTotal {
+   visibility: hidden;
+   display: none;
+}
+*/
+.question{
+   font: 20px bold, sans-serif;
+   padding-top: 20px;
+   padding-bottom: 5px;
+}
+form {
+   padding-left: 25px;
+}

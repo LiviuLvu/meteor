@@ -1,0 +1,312 @@
+<head>
+<title>mbti</title>
+</head>
+<body>{{> hello}}</body>
+<template name="hello">
+   <h3>PSIHOTEST: M.B.T.I.</h3>
+   <p>
+      Distribuiţi 5 puncte fiecărei afirmaţii, proporţional  cu măsura în care acestea sunt conforme cu modul Dvs. de a fi şi de a vă comporta.
+   </p>
+
+   <div class="question 1a">
+      01. Prefer să iau hotărâri după ce ştiu ce gândesc şi ceilalţi.
+   </div>
+   <form class="typeE">{{>formOptions}}</form>
+   <div class="question 1b">
+      02. Prefer să iau decizii singur, fără să-i consult pe ceilalţi.
+   </div>
+   <form class="typeI">{{>formOptions}}</form>
+   <div class="question 2a">
+      03. Prefer să fiu considerat un tip intuitiv, cu imaginaţie.
+   </div>
+   <form class="typeN">{{>formOptions}}</form>
+   <div class="question 2b">
+      04. Prefer să fiu considerat un om al faptelor, cu picioarele pe pământ.
+   </div>
+   <form class="typeS">{{>formOptions}}</form>
+   <div class="question 3a">
+      05. Prefer să iau hotărâri bazându-mă pe datele problemei şi pe o analiză sistematică a situaţiei.
+   </div>
+   <form class="typeT">{{>formOptions}}</form>
+   <div class="question 3b">
+      06. Prefer să iau hotărâri bazându-mă pe ce simt şi pe înţelegerea nevoilor oamenilor.
+   </div>
+   <form class="typeF">{{>formOptions}}</form>
+   <div class="question 4a">
+      07. Prefer să-mi asum singur sarcinile de îndeplinit, după cum consider că este mai bine.
+   </div>
+   <form class="typeP">{{>formOptions}}</form>
+   <div class="question 4b">
+      08. Prefer să mi se spună clar ce am de făcut pentru îndeplinirea obiectivelor.
+   </div>
+   <form class="typeJ">{{>formOptions}}</form>
+   <div class="question 5a">
+      09. Prefer să lucrez singur, să pot reflecta în linişte.
+   </div>
+   <form class="typeI">{{>formOptions}}</form>
+   <div class="question 5b">
+      10. Prefer să fiu mereu activ, în contact cu oamenii, în mijlocul lor.
+   </div>
+   <form class="typeE">{{>formOptions}}</form>
+   <div class="question 6a">
+      11. Prefer să folosesc soluţii verificate, despre care ştiu că s-au dovedit deja ca fiind bune.
+   </div>
+   <form class="typeS">{{>formOptions}}</form>
+   <div class="question 6b">
+      12. Prefer să încerc să găsesc noi soluţii, care se pot dovedi a fi mai bune decât cele de până acum.
+   </div>
+   <form class="typeN">{{>formOptions}}</form>
+   <div class="question 7a">
+      13. Prefer să ajung la concluzii pe baza unei analize logice a faptelor, neinfluenţat de sentimente.
+   </div>
+   <form class="typeT">{{>formOptions}}</form>
+   <div class="question 7b">
+      14. Prefer să ajung la concluzii pe baza părerilor şi experienţei mele despre viaţă şi oameni.
+   </div>
+   <form class="typeF">{{>formOptions}}</form>
+   <div class="question 8a">
+      15. Prefer să nu-mi fixez termenefinale pentru o anumită muncă, să am flexibilitate în timp.
+   </div>
+   <form class="typeP">{{>formOptions}}</form>
+   <div class="question 8b">
+      16. Prefer să-mi fixez un program pe care să-l respect cu stricteţe.
+   </div>
+   <form class="typeJ">{{>formOptions}}</form>
+   <div class="question 9a">
+      17. Prefer să discut puţin despre problema de rezolvat, după care să mă gândesc singur.
+   </div>
+   <form class="typeI">{{>formOptions}}</form>
+   <div class="question 9b">
+      18. Prefer să discut mai mult fără reţineri despre problemă înainte de a mă hotărî.
+   </div>
+   <form class="typeE">{{>formOptions}}</form>
+   <div class="question 10a">
+      19. Prefer să mă gândesc la toate variantele posibile ale unei soluţii când decid ceva.
+   </div>
+   <form class="typeN">{{>formOptions}}</form>
+   <div class="question 10b">
+      20. Prefer să consider strict faptele reale, concrete, atunci când iau o decizie.
+   </div>
+   <form class="typeS">{{>formOptions}}</form>
+   <div class="question 11a">
+      21. Prefer să fiu considerat o persoană cerebrală, pragmatică.
+   </div>
+   <form class="typeT">{{>formOptions}}</form>
+   <div class="question 11b">
+      22. Prefer să fiu considerat o persoană cu multă sensibilitate, caldă.
+   </div>
+   <form class="typeF">{{>formOptions}}</form>
+   <div class="question 12a">
+      23. Prefer să cântăresc mult fiecare alternativă înainte de a decide.
+   </div>
+   <form class="typeP">{{>formOptions}}</form>
+   <div class="question 12b">
+      24. Prefer să analizez rapid informaţiile şi să decid pe loc.
+   </div>
+   <form class="typeJ">{{>formOptions}}</form>
+   <div class="question 13a">
+      25. Prefer să-mi păstrez intimitatea gândurilor şi a sentimentelor.
+   </div>
+   <form class="typeI">{{>formOptions}}</form>
+   <div class="question 13b">
+      26. Prefer să-mi  împărtăşesc gândurile şi sentimentele celor cu care lucrez.
+   </div>
+   <form class="typeE">{{>formOptions}}</form>
+   <div class="question 14a">
+      27. Prefer să am de-a face cu abstractul, cu teoreticul.
+   </div>
+   <form class="typeN">{{>formOptions}}</form>
+   <div class="question 14b">
+      28. Prefer să am de-a face cu realul, concretul.
+   </div>
+   <form class="typeS">{{>formOptions}}</form>
+   <div class="question 15a">
+      29. Prefer să-i ajut pe ceilalţi să-şi cunoască sentimentele, să se autoînţeleagă.
+   </div>
+   <form class="typeF">{{>formOptions}}</form>
+   <div class="question 15b">
+      30. Prefer să-i ajut pe ceilalţi să ia decizii logice.
+   </div>
+   <form class="typeT">{{>formOptions}}</form>
+   <div class="question 16a">
+      31. Prefers chimbarea şi posibilitatea liberei alegeri.
+   </div>
+   <form class="typeP">{{>formOptions}}</form>
+   <div class="question 16b">
+      32. Prefer predictibilitatea şi cunoaşterea dinainte a ceea ce se poate întâmpla.
+   </div>
+   <form class="typeJ">{{>formOptions}}</form>
+   <div class="question 17a">
+      33. Prefer să nu-mi comunic gândurile şi sentimentele personale.
+   </div>
+   <form class="typeI">{{>formOptions}}</form>
+   <div class="question 17b">
+      34. Prefer să-mi comunic liber gândurile şi sentimentle.
+   </div>
+   <form class="typeE">{{>formOptions}}</form>
+   <div class="question 18a">
+      35. Prefer să fiu orientat spre imaginea întregului, a generalului, spre viziunea viitorului.
+   </div>
+   <form class="typeN">{{>formOptions}}</form>
+   <div class="question 18b">
+      36. Prefer să fiu orientat spre cunoaşterea detaliiilor, a concretului şi prezentului.
+   </div>
+   <form class="typeS">{{>formOptions}}</form>
+   <div class="question 19a">
+      37. Obişnuiesc să-mi bazez deciziile pe convingeri şi o argumentaţie bazată pe bunul simţ.
+   </div>
+   <form class="typeF">{{>formOptions}}</form>
+   <div class="question 19b">
+      38. Obişnuiesc să-mi bazez deciziile strict pe date şi pe analiză raţională, logică.
+   </div>
+   <form class="typeT">{{>formOptions}}</form>
+   <div class="question 20a">
+      39. Obişnuiesc să-mi planific munca din timp, bazându-mă la nevoie pe statistici, prognoze.
+   </div>
+   <form class="typeJ">{{>formOptions}}</form>
+   <div class="question 20b">
+      40. Obişnuiesc să-mi fac planuri doar la momentul necesar şi după cum cere situaţia de moment.
+   </div>
+   <form class="typeP">{{>formOptions}}</form>
+   <div class="question 21a">
+      41. Îmi place să cunosc mereu oameni noi.
+   </div>
+   <form class="typeE">{{>formOptions}}</form>
+   <div class="question 21b">
+      42. Îmi place să  fiu singur, sau cu persoane pe care le cunosc bine.
+   </div>
+   <form class="typeI">{{>formOptions}}</form>
+   <div class="question 22a">
+      43. Îmi plac ideile.
+   </div>
+   <form class="typeN">{{>formOptions}}</form>
+   <div class="question 22b">
+      44. Îmi plac faptele.
+   </div>
+   <form class="typeS">{{>formOptions}}</form>
+   <div class="question 23a">
+      45. Îmi plac conceptele, principiile, convingerile.
+   </div>
+   <form class="typeF">{{>formOptions}}</form>
+   <div class="question 23b">
+      46. Îmi plac datele şi concluziile verificabile.
+   </div>
+   <form class="typeT">{{>formOptions}}</form>
+   <div class="question 24a">
+      47. Obişnuiesc să notez într-o agendă de lucru întâlnirile.
+   </div>
+   <form class="typeJ">{{>formOptions}}</form>
+   <div class="question 24b">
+      48. Nu-mi place să folosesc o agendă de lucru.
+   </div>
+   <form class="typeP">{{>formOptions}}</form>
+   <div class="question 25a">
+      49. Discut o problemănouă cât mai detaliat în cadrul grupului.
+   </div>
+   <form class="typeE">{{>formOptions}}</form>
+   <div class="question 25b">
+      50. Analizez problemele în minte şi apoi le comunic celorlalţi concluzia la care am ajuns.
+   </div>
+   <form class="typeI">{{>formOptions}}</form>
+   <div class="question 26a">
+      51. Îmi place să pun în aplicare cuprecizie planuri detaliate.
+   </div>
+   <form class="typeS">{{>formOptions}}</form>
+   <div class="question 26b">
+      52. Nu-mi plac constrângerile impuse de o planificare amănunţită.
+   </div>
+   <form class="typeN">{{>formOptions}}</form>
+   <div class="question 27a">
+      53. Îmi plac oamenii care manifestă o gândire logică.
+   </div>
+   <form class="typeT">{{>formOptions}}</form>
+   <div class="question 27b">
+      54. Îmi plac mai degrabă oamenii sensibili, cu o gândire de “artist”.
+   </div>
+   <form class="typeF">{{>formOptions}}</form>
+   <div class="question 28a">
+      55. Îmi place să fiu lăsat să acţionez după inspiraţia de moment.
+   </div>
+   <form class="typeP">{{>formOptions}}</form>
+   <div class="question 28b">
+      56. Îmi place să ştiu dinainte ce se aşteaptă de la mine.
+   </div>
+   <form class="typeJ">{{>formOptions}}</form>
+   <div class="question 29a">
+      57. Îmi place să  fiu în centrul atenţiei.
+   </div>
+   <form class="typeE">{{>formOptions}}</form>
+   <div class="question 29b">
+      58. Îmi place să fiu retras, să nu atrag atenţia asupra mea.
+   </div>
+   <form class="typeI">{{>formOptions}}</form>
+   <div class="question 30a">
+      59. Îmi place să-mi las imaginaţia să zboare.
+   </div>
+   <form class="typeN">{{>formOptions}}</form>
+   <div class="question 30b">
+      60. Îmi place să examinez atent detaliile realităţii.
+   </div>
+   <form class="typeS">{{>formOptions}}</form>
+   <div class="question 31a">
+      61. Îmi place să trăiesc situaţii cu încărcătură emoţională.
+   </div>
+   <form class="typeF">{{>formOptions}}</form>
+   <div class="question 31b">
+      62. îmi place să-mi folosesc capacităţile intelectuale pentru a analiza informaţiile.
+   </div>
+   <form class="typeT">{{>formOptions}}</form>
+   <div class="question 32a">
+      63. Îmi place să încep o întâlnire de lucru exact la momentul stabilit.
+   </div>
+   <form class="typeJ">{{>formOptions}}</form>
+   <div class="question 32b">
+      64. Îmi place să încep o întâlnire de lucru atunci când toţi au sosit, chiar dacă se întârzie.
+   </div>
+   <form class="typeP">{{>formOptions}}</form>
+
+   <h1>
+      <button class="calculate">Calculează Rezultat</button>
+   </h1>
+   <h3>
+      Tipul de personalitate este:
+      <span id="compareEI"></span>
+      <span id="compareSN"></span>
+      <span id="compareTF"></span>
+      <span id="compareJP"></span>
+   </h3>
+   <!--put each category of total answers in separate tags-->
+   <p class="categoryTotal">
+      Result of E questions is:
+      <span id="totalE"></span>
+   </p>
+   <p class="categoryTotal">
+      Result of I questions is:
+      <span id="totalI"></span>
+   </p>
+   <p class="categoryTotal">
+      Result of S questions is:
+      <span id="totalS"></span>
+   </p>
+   <p class="categoryTotal">
+      Result of N questions is:
+      <span id="totalN"></span>
+   </p>
+   <p class="categoryTotal">
+      Result of T questions is:
+      <span id="totalT"></span>
+   </p>
+   <p class="categoryTotal">
+      Result of F questions is:
+      <span id="totalF"></span>
+   </p>
+   <p class="categoryTotal">
+      Result of J questions is:
+      <span id="totalJ"></span>
+   </p>
+   <p class="categoryTotal">
+      Result of P questions is:
+      <span id="totalP"></span>
+   </p>
+
+</template>
